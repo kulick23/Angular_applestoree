@@ -1,0 +1,105 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px"
+     [@expand]="">
+
+  <div fxFlex>
+    <div>
+      <h3>Контакты</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex>
+    <div fxLayout="column" fxLayout.gt-sm="row">
+      <div fxFlex="110" fxFlexOffset="20px">
+        <h4>Наш адрес</h4>
+        <address>
+          д. 32, ул. К. Маркса<br> Минск<br> Беларусь<br>
+          <i class="fa fa-phone"></i>: +375 29 706 85 85<br>
+          <i class="fa fa-fax"></i>: +375 29 636 65 85<br>
+          <i class="fa fa-envelope"></i>:
+          <a href="mailto:apple@istore.com">apple@istore.com</a>
+        </address>
+        <p></p>
+        <div>
+          <a mat-raised-button href="tel:+375297068585"><i class="fa fa-phone"> Call</i></a>
+          <a mat-raised-button><i class="fa fa-skype"></i> Skype</a>
+          <a mat-raised-button href="mailto::apple@istore.com"><i class="fa fa-envelope"> Email</i></a>
+        </div>
+      </div>
+    </div>
+
+    <div fxFlex fxFlexOffset="10" class="form-size">
+      <h3>Отправьте нам свой отзыв</h3>
+
+      <form novalidate [formGroup]="feedbackForm" (ngSubmit)="onSubmit()">
+
+        <p>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="firstname" placeholder="Имя" type="text" required>
+
+            <mat-error *ngIf="feedbackFormErrors.firstname">
+              {{feedbackFormErrors.firstname}}
+            </mat-error>
+
+          </mat-form-field>
+
+          <mat-form-field class="half-width">
+            <input matInput formControlName="lastname" placeholder="Фамилия" type="text" required>
+
+            <mat-error *ngIf="feedbackFormErrors.lastname">
+              {{feedbackFormErrors.lastname}}
+            </mat-error>
+
+          </mat-form-field>
+        </p>
+
+        <p>
+          <mat-form-field class="half-width">
+            <input matInput formControlName="telNumber" placeholder="Номер телефона" type="tel" pattern="[0-9]*"
+                   required>
+
+            <mat-error *ngIf="feedbackFormErrors.telNumber">
+              {{feedbackFormErrors.telNumber}}
+            </mat-error>
+
+          </mat-form-field>
+
+          <mat-form-field class="half-width">
+            <input matInput formControlName="email" placeholder="Электронная почта" type="email" required>
+
+            <mat-error *ngIf="feedbackFormErrors.email">
+              {{feedbackFormErrors.email}}
+            </mat-error>
+
+          </mat-form-field>
+        </p>
+
+        <table class="form-size">
+          <td>
+            <mat-slide-toggle formControlName="agree">Можем ли мы с Вами связаться?</mat-slide-toggle>
+          </td>
+          <td>
+            <mat-select placeholder="Как?" formControlName="contactType">
+              <mat-option *ngFor="let type of contactType" [value]="type">
+                {{type}}
+              </mat-option>
+            </mat-select>
+          </td>
+        </table>
+
+        <p>
+          <mat-form-field class="full-width">
+            <textarea matInput formControlName="message" placeholder="Ваш отзыв" rows="10"></textarea>
+          </mat-form-field>
+        </p>
+
+        <button type="submit" mat-button class="background-primary text-floral-white"
+                [disabled]="feedbackForm.invalid">Отправить
+        </button>
+
+      </form>
+    </div>
+  </div>
+</div>

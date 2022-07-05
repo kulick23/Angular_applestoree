@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Аксессуары</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex *ngIf="acses">
+    <mat-grid-list cols="3" rowHeight="3:2">
+      <mat-grid-tile *ngFor="let apple of acses" [routerLink]="['/apple-detail', apple.id]" appHighlight>
+        <img class="image" src="{{BaseURL + apple.image}}" alt={{apple.name}}>
+        <mat-grid-tile-footer>
+          <h1>{{apple.name | uppercase}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <app-spinner [hiddenData]="acses"></app-spinner>
+
+</div>

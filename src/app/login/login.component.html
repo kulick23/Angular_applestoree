@@ -1,0 +1,31 @@
+<app-toolbar [title]="'Вход'"></app-toolbar>
+
+<form novalidate #loginForm="ngForm">
+
+  <mat-dialog-content>
+    <p>
+      <mat-form-field class="field-space">
+        <input matInput placeholder="Логин" type="text"
+               [(ngModel)]="appleService.user.username" name="username"
+               #username="ngModel" required>
+        <mat-error *ngIf="username.errors">Введите логин</mat-error>
+      </mat-form-field>
+      <mat-form-field>
+        <input matInput placeholder="Пароль" type="password"
+               [(ngModel)]="appleService.user.password" name="password"
+               #password="ngModel" required>
+        <mat-error *ngIf="password.errors">Введите пароль</mat-error>
+      </mat-form-field>
+    </p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <button mat-button (click)="openSignUpForm()"><u style="font-size: medium">Регистрация</u></button>
+    <span class="flex-spacer"></span>
+    <button mat-button mat-dialog-close="true">Отменить</button>
+    <button mat-button (click)="onSubmit()" class="background-primary text-floral-white"
+            [disabled]="loginForm.form.invalid">Войти
+    </button>
+  </mat-dialog-actions>
+
+</form>

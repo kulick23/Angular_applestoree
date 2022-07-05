@@ -1,0 +1,75 @@
+<app-toolbar [title]="'Регистрация'"></app-toolbar>
+
+<form novalidate #signUpForm="ngForm" (ngSubmit)="onSubmit()">
+
+  <mat-dialog-content>
+
+    <p>
+      <mat-form-field class="field-space">
+        <input matInput placeholder="Логин" type="text"
+               [(ngModel)]="appleService.user.username" name="username"
+               #username="ngModel" required>
+        <mat-error *ngIf="username.errors">Введите логин</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-space">
+        <input matInput placeholder="Пароль" type="password"
+               [(ngModel)]="appleService.user.password" name="password"
+               #password="ngModel" required>
+        <mat-error *ngIf="password.errors">Введите пароль</mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="field-space">
+        <input matInput placeholder="Телефон" type="text"
+               [(ngModel)]="appleService.user.telNumber" name="telNumber"
+               #telNumber="ngModel" required>
+        <mat-error *ngIf="telNumber.errors">Введите номер телефона</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-space">
+        <input matInput placeholder="Электронная почта" type="email"
+               [(ngModel)]="appleService.user.email" name="email"
+               #email="ngModel" required>
+        <mat-error *ngIf="email.errors">Введите электронную почту</mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="field-space street">
+        <input matInput placeholder="Улица" type="text"
+               [(ngModel)]="appleService.user.street" name="street"
+               #street="ngModel" required>
+        <mat-error *ngIf="street.errors">Введите улицу</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-space house-apt">
+        <input matInput placeholder="Дом" type="number"
+               [(ngModel)]="appleService.user.house" name="house" min="1"
+               #house="ngModel" required>
+        <mat-error *ngIf="house.errors">Введите номер дома</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="field-space house-apt">
+        <input matInput placeholder="Квартира" type="number" min="1"
+               [(ngModel)]="appleService.user.apartment" name="apartment"
+               #apartment="ngModel" required>
+        <mat-error *ngIf="apartment.errors">Введите номер квартиры</mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-checkbox [(ngModel)]="appleService.user.remember" name="remember">Запомнить меня</mat-checkbox>
+    </p>
+  </mat-dialog-content>
+
+  <mat-dialog-actions>
+    <span class="flex-spacer"></span>
+    <button mat-button mat-dialog-close="true">Отменить</button>
+    <button mat-button type="submit" class="background-primary text-floral-white"
+            [disabled]="signUpForm.form.invalid">Зарегистрироваться
+    </button>
+  </mat-dialog-actions>
+
+</form>

@@ -1,0 +1,429 @@
+{
+
+
+
+"apples": [
+    {
+      "id": "0",
+      "name": "iphon",
+      "image": "images/iphon.png",
+      "featured": true,
+      "label": "Телефон"
+    },
+    {
+      "id": "1",
+      "name": "ipad",
+      "image": "images/ipad.png",
+      "featured": false,
+      "label": "Планшет"
+
+    },
+    {
+      "id": "2",
+      "name": "airpods",
+      "image": "images/airpods.png",
+      "featured": false,
+      "label": "Наушники"
+    },
+    {
+      "id": "3",
+      "name": "mac",
+      "image": "images/mac.png",
+      "featured": true,
+      "label": "Компьютер"
+    },
+    {
+      "id": "4",
+      "name": "applewatch",
+      "image": "images/applewatch.png",
+      "featured": false,
+      "label": "Часы"
+    },
+  {
+    "id": "5",
+    "name": "acses",
+    "image": "images/acses.png",
+    "featured": false,
+    "label": "Акссесуары"
+  }
+  ],
+
+
+
+  "iphon": [
+    {
+      "id": "0",
+      "name": "Iphon 13 PRO MAX",
+      "image": "iphons/13PROMAX.jpg",
+      "featured": true,
+      "label": "Телефон",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "Iphon 13 PRO",
+      "image": "iphons/13PRO.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "Iphon 13",
+      "image": "iphons/13.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "Iphon 13 MINI",
+      "image": "iphons/13MINI.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "Iphon 12 PRO MAX",
+      "image": "iphons/12PROMAX.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "3200"
+    },
+    {
+      "id": "5",
+      "name": "Iphon 12 PRO",
+      "image": "iphons/12PRO.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "3000"
+    },
+    {
+      "id": "6",
+      "name": "Iphon 12",
+      "image": "iphons/12.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "2500"
+    },
+    {
+      "id": "7",
+      "name": "Iphon 12 MINI",
+      "image": "iphons/12MINI.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "1550"
+    },
+    {
+      "id": "8",
+      "name": "Iphon 11 PRO MAX",
+      "image": "iphons/11PROMAX.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "2450"
+    },
+    {
+      "id": "9",
+      "name": "Iphon 11 PRO",
+      "image": "iphons/11PRO.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "2200"
+    },
+    {
+      "id": "10",
+      "name": "Iphon 11",
+      "image": "iphons/11.jpg",
+      "featured": false,
+      "label": "Телефон",
+      "price": "1500"
+    }
+  ],
+  "ipad": [
+    {
+      "id": "0",
+      "name": "IpadPro11",
+      "image": "ipads/PRO11.jpg",
+      "featured": true,
+      "label": "Планшет",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "Ipad Pro 12,9",
+      "image": "ipads/PRO12,9.jpg",
+      "featured": false,
+      "label": "Планшет",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "Ipad AIR 4",
+      "image": "ipads/AIR4.jpg",
+      "featured": false,
+      "label": "Планшет",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "Ipad 10,2",
+      "image": "ipads/10,2.jpg",
+      "featured": false,
+      "label": "Планшет",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "Ipad MINI",
+      "image": "ipads/MINI.jpg",
+      "featured": false,
+      "label": "Планшет",
+      "price": "1550"
+    }
+  ],
+
+  "airpods": [
+    {
+      "id": "0",
+      "name": "Airpods 1",
+      "image": "airpods/1.jpg",
+      "featured": true,
+      "label": "Наушники",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "Airpods 2",
+      "image": "airpods/2.jpg",
+      "featured": false,
+      "label": "Наушники",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "Airpods 3",
+      "image": "airpods/3.jpg",
+      "featured": false,
+      "label": "Наушники",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "Airpods PRO",
+      "image": "airpods/PRO.jpg",
+      "featured": false,
+      "label": "Наушники",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "Airpods MAX",
+      "image": "airpods/MAX.jpg",
+      "featured": false,
+      "label": "Наушники",
+      "price": "1550"
+    }
+  ],
+  "mac": [
+    {
+      "id": "0",
+      "name": "Macbook AIR",
+      "image": "mac/AIR.jpg",
+      "featured": true,
+      "label": "Компьютер",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "Macbook PRO",
+      "image": "mac/PRO.jpg",
+      "featured": false,
+      "label": "Компьютер",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "Imac",
+      "image": "mac/IMAC.jpg",
+      "featured": false,
+      "label": "Компьютер",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "IMAC MINI",
+      "image": "mac/MINI.jpg",
+      "featured": false,
+      "label": "Компьютер",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "IMAC PRO",
+      "image": "mac/PRO.jpg",
+      "featured": false,
+      "label": "Компьютер",
+      "price": "1550"
+    }
+  ],
+  "applewatch": [
+    {
+      "id": "0",
+      "name": "Apple Watch 1",
+      "image": "applewatch/1.jpg",
+      "featured": true,
+      "label": "Часы",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "Apple Watch 2",
+      "image": "applewatch/2.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "Apple Watch 3",
+      "image": "applewatch/3.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "Apple Watch 4",
+      "image": "applewatch/4.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "Apple Watch 5",
+      "image": "applewatch/5.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "3200"
+    },
+    {
+      "id": "5",
+      "name": "Apple Watch 6",
+      "image": "applewatch/6.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "3000"
+    },
+    {
+      "id": "6",
+      "name": "Apple Watch 7",
+      "image": "applewatch/7.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "2500"
+    },
+    {
+      "id": "7",
+      "name": "Apple Watch SE",
+      "image": "applewatch/SE.jpg",
+      "featured": false,
+      "label": "Часы",
+      "price": "1550"
+    }
+    ],
+
+  "acses": [
+    {
+      "id": "0",
+      "name": "Block",
+      "image": "acses/BLOCK.jpg",
+      "featured": true,
+      "label": "Аксессуары",
+      "price": "3300"
+    },
+    {
+      "id": "1",
+      "name": "BLOCK TYPE C",
+      "image": "acses/BLOCKC.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "3100"
+    },
+    {
+      "id": "2",
+      "name": "LIGHTNING",
+      "image": "acses/LIGHTNING.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "2200"
+    },
+    {
+      "id": "3",
+      "name": "LIGHTNING TYPE C",
+      "image": "acses/TYPEC.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "1800"
+    },
+    {
+      "id": "4",
+      "name": "MAGSAFE",
+      "image": "acses/MAGSAFE.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "3200"
+    },
+    {
+      "id": "5",
+      "name": "MAGSAFE POWER BANK",
+      "image": "acses/MAGSAFE2.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "3000"
+    },
+    {
+      "id": "6",
+      "name": "MOUSE",
+      "image": "acses/MOUSE.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "2500"
+    },
+    {
+      "id": "7",
+      "name": "KEYBOARD",
+      "image": "acses/KEYBOARD.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "1550"
+    },
+    {
+      "id": "8",
+      "name": "PENCIL",
+      "image": "acses/PENCIL.jpg",
+      "featured": false,
+      "label": "Аксессуары",
+      "price": "2450"
+    }
+    ],
+
+
+  "feedback": [
+    {
+      "firstname": "ttrhtr",
+      "lastname": "trhtr",
+      "telNumber": "0456576",
+      "email": "2323@ha.com",
+      "agree": false,
+      "contactType": "",
+      "message": "gyjyj",
+      "id": 1
+    }
+  ],
+
+
+  "users": [],
+  "orders": []
+}

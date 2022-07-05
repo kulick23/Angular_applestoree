@@ -1,0 +1,15 @@
+$background-dark: #313132;
+$background-moredark: #ddd;
+
+@mixin zero-margin($pad-up-down, $pad-left-right) {
+  margin: 0 auto;
+  padding: $pad-up-down $pad-left-right;
+}
+
+
+.head{
+  background: $background-dark;
+}
+.active {
+  background: $background-moredark;
+}

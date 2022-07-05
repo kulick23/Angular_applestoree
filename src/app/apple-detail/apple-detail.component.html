@@ -1,0 +1,38 @@
+<div class="container"
+     fxLayout="row"
+     fxLayout.sm="column"
+     fxLayout.xs="column"
+     fxLayoutAlign.gt-md="space-around center"
+     fxLayoutGap="50px"
+     fxLayoutGap.xs="0">
+
+  <div fxFlex="35" *ngIf="apple" [@visibility]="visibility">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>
+          <h3>{{apple.name | uppercase}}</h3>
+        </mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{BaseURL + apple.image}}" alt={{apple.name}}>
+
+      <mat-card-actions>
+
+
+
+        <button mat-button routerLink='/buy'>ВЫБРАТЬ ЕЩЕ</button>
+        <button mat-button (click)="addToOrder()">ДОБАВИТЬ В КОРЗИНУ</button>
+
+        <span class="flex-spacer"></span>
+
+
+      </mat-card-actions>
+    </mat-card>
+  </div>
+
+  <app-spinner [hiddenData]="apple"></app-spinner>
+
+  <div fxFlex="70" *ngIf="apple" [@visibility]="visibility">
+
+    </div>
+
+  </div>

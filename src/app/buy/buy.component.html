@@ -1,0 +1,25 @@
+<div class="container"
+     fxLayout="column"
+     fxLayoutGap="10px">
+
+  <div fxFlex>
+    <div>
+      <h3>Купить</h3>
+      <hr>
+    </div>
+  </div>
+
+  <div fxFlex *ngIf="apples">
+    <mat-grid-list cols="3" rowHeight="3:2">
+      <mat-grid-tile *ngFor="let chosenapple of apples" (click)="navigateToProduct(chosenapple)" appHighlight>
+        <img class="image" src="{{BaseURL + chosenapple.image}}" alt={{chosenapple.name}}>
+        <mat-grid-tile-footer>
+          <h1>{{chosenapple.name | uppercase}}</h1>
+        </mat-grid-tile-footer>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
+
+  <app-spinner [hiddenData]="apples"></app-spinner>
+
+</div>
